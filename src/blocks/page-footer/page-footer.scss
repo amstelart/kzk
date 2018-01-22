@@ -5,4 +5,38 @@
 .page-footer {
 
   $block-name:                &; // #{$block-name}__element
+  background: #fff;
+  position: relative;
+  z-index: 10;
+
+  &__inner {
+    @include container;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+
+  &__nav {
+    .main-nav {
+      @include container;
+      .main-nav__list {
+        justify-content: center;
+      }
+    }
+  }
+
+  &__copiryght {
+    background: #292929;
+    overflow: hidden;
+    color: #fff;
+    text-align: right;
+    a {
+      color: #fff;
+    }
+  }
+
 }

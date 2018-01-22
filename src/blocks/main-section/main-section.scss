@@ -1,0 +1,58 @@
+// В этом файле должны быть стили для БЭМ-блока main-section, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.main-section {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__inner {
+    @include container;
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+
+  &__header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  &__header-title {
+    color: $color-second;
+    font-size: 2.3em;
+    font-weight: 400;
+    margin: 0;
+  }
+  &__header-caption {
+    margin: 0;
+  }
+  &__container {
+
+  }
+
+  &--bg {
+    position: relative;
+    background-color: #292929;
+    color: #fff;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.45);
+    }
+
+    .main-section__inner {
+      position: relative;
+      z-index: 2;
+    }
+
+    #{$block-name}__header-title {
+      color: #fff;
+    }
+  }
+
+}
