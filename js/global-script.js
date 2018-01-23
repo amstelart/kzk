@@ -39,7 +39,10 @@ $( document ).ready(function() {
       }
     }
   }).on('change.owl.carousel', function(event) {
-    console.log(event);
+    var $current = event.relatedTarget.items()[event.relatedTarget.current()-1];
+    $current.find('.slide-caption').data('img')
+    $('#main-slider-bg').css('background-image', 'url(' + $current.find('.slide-caption').data('slide-image') + ')')
+
   });
 
   $("#main-carousel-01").owlCarousel({
