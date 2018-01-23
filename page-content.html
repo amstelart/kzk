@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>КЖК</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+  </script>
+<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+<link rel="manifest" href="/img/manifest.json">
+<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#ffffff">
+<link rel="shortcut icon" href="/img/favicon.ico">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/img/mstile-144x144.png">
+<meta name="msapplication-config" content="/img/browserconfig.xml">
+<meta name="theme-color" content="#ffffff"></head>
+<body>
+  <div class="page__inner">
+    <div class="page__content">
+      <header class="page-header" role="banner">
+        <div class="page-header__inner">
+          <div class="page-header__top">
+            <a href="index.html" class="logo">
+              <img src="img/logo.png" alt="logo">
+            </a>
+            <div class="filial-info">
+              <div class="filial-info__item">
+                <h4 class="filial-info__item-title">Центральный филиал</h4>
+                <div>Курск, п. Аккумулятор д. 34А</div>
+                <div>+7 (4712) 77-02-04</div>
+              </div>
+              <div class="filial-info__item">
+                <h4 class="filial-info__item-title">Нижегородский филиал</h4>
+                <div>Нижний Новгород, ул. Коновалова д. 4 оф. 11</div>
+                <div>+7 (831) 216-16-55</div>
+              </div>
+            </div>
+            <button class="btn btn--outline" type="button" data-toggle="modal" data-target="#modal-call">Заказать звонок</button>
+            <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
+          </div>
+        </div>
+        <div class="page-header__nav">
+          <nav id="main-nav" class="main-nav" role="navigation">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">
+                  О компании
+                </a>
+              </li>
+              <li class="main-nav__item main-nav__item--active">
+                <a href="#" class="main-nav__link">
+                  Услуги
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">
+                  Сертификаты
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="page-section">
+        <div class="page-section__inner">
+          <div class="page-section__header">
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
+              <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Услуги</a></li>
+              <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Демонтаж крупногабаритных металлоконструкций</a></li>
+            </ul>
+            <h1 class="page-section__header-title">Демонтаж крупногабаритных металлоконструкций</h1>
+          </div>
+          <div class="page-section__container">
+            <main class="content" role="main">
+              <p>Качеству выполнения работ по монтажу металлоконструкций уделяется огромное внимание, так как от них зависит степень безопасности объекта при эксплуатации. Однако не меньшего внимания требует и демонтаж технологических, временных или отслуживших свой гарантийный срок металлоконструкций. Как правило, демонтаж выполняют те же организации, которые в своё время монтировали здание или оборудование. Это вполне оправдано, так как специалистам проводившим сборку намного легче выполнить демонтаж этих металлоконструкций.</p>
+              <p>Если раньше необходимость в демонтаже крупных металлоконструкций возникала не часто, то сегодня подавляющее большинство промышленных зданий, подъёмных механизмов и морально устаревшего технологического оборудования нуждается в замене. Различают три основных метода демонтажа:</p>
+              <p>Оборудование режется для сдачи в металлолом. Как правило, это отработавшее свой срок химическое оборудование или проржавевшие конструкции цехов и ангаров;
+              Оборудование режется с целью освободить место для монтажа более современного, но значительную часть металлоконструкций планируется повторно использовать на неответственных участках;
+              Оборудование демонтируется для последующего монтажа и использования на новом месте.
+              Независимо от целей демонтажа, металлоконструкции должны разбираться по тщательно разработанному плану. Самым трудоёмким и дорогостоящим является демонтаж оборудования для перемещения его на новое место. При этом методе практически не используются резаки, а бригада монтажников старается с минимальными повреждениями демонтировать с соблюдением очерёдности все легкосъёмные элементы, тщательно нумеруя и упаковывая их. Затем с помощью различных грузоподъёмных механизмов производится разборка крупногабаритных элементов.</p>
+            </main>
+            <div class="gallery-carousel owl-carousel">
+              <a href="img/page-gallery-img-01.jpg" data-fancybox="img-gallery-01">
+                <img src="img/page-gallery-img-01.jpg" alt="">
+              </a>
+              <a href="img/page-gallery-img-02.jpg" data-fancybox="img-gallery-01">
+                <img src="img/page-gallery-img-02.jpg" alt="">
+              </a>
+              <a href="img/page-gallery-img-03.jpg" data-fancybox="img-gallery-01">
+                <img src="img/page-gallery-img-03.jpg" alt="">
+              </a>
+              <a href="img/page-gallery-img-04.jpg" data-fancybox="img-gallery-01">
+                <img src="img/page-gallery-img-04.jpg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-section main-section--bg" style="background-image: url(img/bg-section-feedback.jpg);">
+        <div class="main-section__inner">
+          <div class="main-section__header">
+            <h2 class="main-section__header-title">Остались вопросы</h2>
+            <p class="main-section__header-caption">Для получения подробной информации звоните нам: +7 (4712) 77-02-04 или оставьте заявку</p>
+          </div>
+          <div class="main-section__container">
+            <form action="" class="form-feedback">
+              <label class="form-feedback__field field-text">
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="text" placeholder="Имя" id="" name="">
+                </span>
+              </label>
+              <label class="form-feedback__field field-text">
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="text" placeholder="Телефон" id="" name="">
+                </span>
+              </label>
+              <div class="form-feedback__field field-actions">
+                <button class="btn btn--block">Оставить заявку</button>
+              </div>
+              <div class="form-feedback__caption">
+                <p>Оставляя заявку вы соглашаетесь на обработку персональных данных. <a href="#">Политика конфиденциальности</a></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page__footer-wrapper">
+      <footer class="page-footer" role="contentinfo">
+        <div class="page-footer__inner">
+          <div class="page-footer__top">
+            <a href="index.html" class="logo">
+              <img src="img/logo.png" alt="logo">
+            </a>
+            <div class="filial-info">
+              <div class="filial-info__item">
+                <h4 class="filial-info__item-title">Центральный филиал</h4>
+                <div>Курск, п. Аккумулятор д. 34А</div>
+                <div>+7 (4712) 77-02-04</div>
+              </div>
+              <div class="filial-info__item">
+                <h4 class="filial-info__item-title">Нижегородский филиал</h4>
+                <div>Нижний Новгород, ул. Коновалова д. 4 оф. 11</div>
+                <div>+7 (831) 216-16-55</div>
+              </div>
+            </div>
+            <button class="btn" type="button" data-toggle="modal" data-target="#modal-call">Заказать звонок</button>
+          </div>
+        </div>
+        <div class="page-footer__nav">
+          <nav class="main-nav" role="navigation">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">
+                  О компании
+                </a>
+              </li>
+              <li class="main-nav__item main-nav__item--active">
+                <a href="#" class="main-nav__link">
+                  Услуги
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">
+                  Сертификаты
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="page-footer__copiryght">
+          <div class="page-footer__inner">
+            <p>Разработка сайта — <a href="http://www.2showbiz.ru/">Showbiz Studio</a></p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div id="modal-call" class="modal" tabindex="-1" role="dialog">
+      <div class="modal__dialog" role="document">
+        <div class="modal__content">
+          <div class="modal__header">
+            <a href="#" class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></a>
+            <h4 class="modal__title">Modal</h4>
+          </div>
+          <div class="modal__body">
+            <form action="" class="form-modal">
+              <label class="form-modal__field field-text">
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="text" placeholder="Имя" id="" name="">
+                </span>
+              </label>
+              <label class="form-modal__field field-text">
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="text" placeholder="Телефон" id="" name="">
+                </span>
+              </label>
+              <div class="form-modal__field field-actions">
+                <button class="btn btn--block">Оставить заявку</button>
+              </div>
+              <div class="form-modal__caption">
+                <p>Оставляя заявку вы соглашаетесь на обработку персональных данных. <a href="#">Политика конфиденциальности</a></p>
+              </div>
+            </form>
+          </div>
+          <div class="modal__footer">
+            <!-- <button type="button" class="btn" data-dismiss="modal">Закрыть</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/script.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/global-script.js"></script>
+</body>
+</html>
