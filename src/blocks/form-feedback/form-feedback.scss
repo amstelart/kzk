@@ -12,6 +12,9 @@
     @include col();
     @include col(lg,4);
     margin: 0;
+    @media (max-width: $screen-lg) {
+      margin-bottom: 15px;
+    }
   }
 
   &__caption {

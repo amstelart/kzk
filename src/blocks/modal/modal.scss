@@ -66,7 +66,7 @@ $z-index-modal:               100 !default;
   }
 
   &__header {
-    padding: 5px 40px 0 10px;
+    padding: 5px 40px 0 40px;
     flex-shrink: 0;
   }
 
@@ -86,7 +86,7 @@ $z-index-modal:               100 !default;
   }
 
   &__body {
-    padding: 0 10px;
+    padding: 0 40px;
     flex-grow: 1;
   }
 

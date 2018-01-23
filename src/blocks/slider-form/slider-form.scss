@@ -1,16 +1,20 @@
-// В этом файле должны быть стили для БЭМ-блока logo, его элементов,
+// В этом файле должны быть стили для БЭМ-блока slider-form, его элементов,
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
-.logo {
+.slider-form {
 
   $block-name:                &; // #{$block-name}__element
 
-  display: block;
-  white-space: nowrap;
-  flex-shrink: 0;
+  max-width: 320px;
+  background: #fff;
+  padding: 30px;
 
-  img {
-    display: block;
+  &__title {
+    margin: 0;
   }
+  &__caption {
+    margin-bottom: 1.6em;
+  }
+
 }

@@ -11,7 +11,7 @@ $screen-lg:                   992px !default;
 $screen-xl:                   1200px !default;
 $screen-xxl:                  1800px !default;
 
-$menu-desktop-width:          $screen-xl !default;
+$menu-desktop-width:          $screen-sm;
 $toggler-part-height:         3px !default;
 $toggler-part-bg-color:       #000 !default;
 
@@ -23,6 +23,9 @@ $transition-time:             0.3s !default;
 
   position: relative;
   z-index: 10;
+  @media (max-width: $screen-sm) {
+    background: $color-main;
+  }
 
   // первый уровень
   &__list {
@@ -34,6 +37,14 @@ $transition-time:             0.3s !default;
     @media (max-width: ($menu-desktop-width - 1)) {
 
       // открытие/закрытие меню только в случае работающего JS
+
+
+      #{$block-name}__link {
+        background: $color-main;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+      }
 
       .js & {
         overflow: hidden;
@@ -52,6 +63,9 @@ $transition-time:             0.3s !default;
       display: flex;
       flex-wrap: wrap;
     }
+    @media (max-width: $screen-lg) {
+      justify-content: center;
+    }
   }
 
   &__item {
@@ -69,6 +83,7 @@ $transition-time:             0.3s !default;
     display: block;
     padding: 1em ;
     text-decoration: none;
+    color: inherit;
     background-color: #fff;
 
     &:hover,

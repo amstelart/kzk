@@ -1,0 +1,23 @@
+// В этом файле должны быть стили для БЭМ-блока icon, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.icon {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: inline-block;
+  margin-right: 15px;
+  vertical-align: middle;
+
+  &--marker {
+    @include sprite($icon-marker);
+  }
+  &--phone {
+    @include sprite($icon-phone);
+  }
+  &--mail {
+    @include sprite($icon-mail);
+  }
+
+}

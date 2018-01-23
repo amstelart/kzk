@@ -1,0 +1,78 @@
+// В этом файле должны быть стили для БЭМ-блока contacts-map, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.contacts-map {
+
+  $block-name:                &; // #{$block-name}__element
+  position: relative;
+
+  + .contacts-map {
+    margin-top: 35px;
+    @media (max-width: $screen-md) {
+      margin-top: 15px;
+    }
+  }
+
+  &__image {
+    padding-left: 98px;
+    padding-top: 25px;
+  }
+
+  &__card {
+    background: #fff;
+    border: 4px solid $color-second;
+    padding: 2em;
+    max-width: 460px;
+    min-width: 460px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 16px;
+      li+li {
+        margin-top: 20px;
+      }
+      li a {
+        color: inherit;
+      }
+    }
+
+  }
+
+  &__card-title {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+    line-height: 1.1;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $screen-md) {
+    #{$block-name}__card {
+      position: relative;
+      max-width: 100%;
+      min-width: auto;
+      ul {
+        font-size: 14px;
+        li + li {
+          margin-top: 10px;
+        }
+        li .icon {
+          display: none;
+        }
+      }
+    }
+    #{$block-name}__card-title {
+      margin-bottom: 10px;
+    }
+    #{$block-name}__image {
+      padding: 0;
+    }
+  }
+
+}

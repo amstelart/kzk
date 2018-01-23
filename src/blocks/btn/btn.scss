@@ -67,6 +67,11 @@ $border-radius:               3px !default;
     width: 100%;
   }
 
+  &--outline {
+    color: $color-main;
+    background: transparent;
+  }
+
   // &__icon {
   //   display: inline-block;
   //   vertical-align: middle;
