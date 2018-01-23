@@ -38,6 +38,8 @@ $( document ).ready(function() {
         items: 1,
       }
     }
+  }).on('change.owl.carousel', function(event) {
+    console.log(event);
   });
 
   $("#main-carousel-01").owlCarousel({
