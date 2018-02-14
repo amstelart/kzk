@@ -35,7 +35,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
-<link rel="manifest" href="/img/manifest.json">
+<link rel="manifest" href="/img/site.webmanifest">
 <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#ffffff">
 <link rel="shortcut icon" href="/img/favicon.ico">
 <meta name="msapplication-TileColor" content="#ffffff">
@@ -76,7 +76,7 @@
                 </a>
               </li>
               <li class="main-nav__item main-nav__item--active">
-                <a href="#" class="main-nav__link">
+                <a href="#services-anchor" class="main-nav__link">
                   Услуги
                 </a>
               </li>
@@ -110,28 +110,30 @@
               <p class="slide-caption__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem placeat quam officiis.</p>
             </div>
           </div>
-          <form action="" class="slider-form">
-            <h3 class="slider-form__title">Есть задача?</h3>
-            <p class="slider-form__caption">Наш менеджер подберет оптимальный путь их решения</p>
-            <label class="slider-form__field field-text">
-              <span class="field-text__input-wrap">
-                <input class="field-text__input" type="text" placeholder="Имя" id="" name="">
-              </span>
-            </label>
-            <label class="slider-form__field field-text">
-              <span class="field-text__input-wrap">
-                <input class="field-text__input" type="text" placeholder="Телефон" id="" name="">
-              </span>
-            </label>
-            <div class="slider-form__field field-actions">
-              <button class="btn btn--block">Оставить заявку</button>
-            </div>
-          </form>
+          <div class="slider-form__wrap">
+            <form action="" class="slider-form">
+              <h3 class="slider-form__title">Есть задача?</h3>
+              <p class="slider-form__caption">Наш менеджер подберет оптимальный путь их решения</p>
+              <label class="slider-form__field field-text">
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="text" placeholder="Имя" id="" name="">
+                </span>
+              </label>
+              <label class="slider-form__field field-text">
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="text" placeholder="Телефон" id="" name="">
+                </span>
+              </label>
+              <div class="slider-form__field field-actions">
+                <button class="btn btn--block">Оставить заявку</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
       <div class="main-section">
         <div class="main-section__inner">
-          <div class="main-section__header">
+          <div class="main-section__header" id="services-anchor">
             <h2 class="main-section__header-title">Наши услуги</h2>
           </div>
           <div class="main-section__container">
