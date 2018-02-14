@@ -30,7 +30,7 @@
     min-height: 440px;
     z-index: 2;
 
-    .slider-form {
+    .slider-form__wrap {
       position: absolute;
       right: 100px;
       z-index: 3;
@@ -44,7 +44,7 @@
       flex-direction: column;
       min-height: auto;
 
-      .slider-form {
+      .slider-form__wrap {
         position: static;
       }
 

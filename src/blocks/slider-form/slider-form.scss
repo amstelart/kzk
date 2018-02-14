@@ -2,13 +2,16 @@
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
-.slider-form {
-
-  $block-name:                &; // #{$block-name}__element
-
+.slider-form__wrap {
   max-width: 320px;
   background: #fff;
+}
+
+.slider-form {
+  
   padding: 30px;
+
+  $block-name:                &; // #{$block-name}__element
 
   &__title {
     margin: 0;
